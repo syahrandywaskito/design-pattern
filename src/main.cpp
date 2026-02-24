@@ -1,4 +1,5 @@
 #include "modifiers/ModifierFactory.h"
+#include "decks/Deck.h"
 #include "RunSession.h"
 #include "ScoringSystem.h"
 #include "ShopSystem.h"
@@ -8,10 +9,15 @@
 
 int main(int argc, char const *argv[])
 {
-    ModifierFactory* factory = new ModifierFactory();
-    std::unique_ptr<IModifier> newCatalyst = factory->CreateCatalyst("calcination");
+    // ModifierFactory* factory = new ModifierFactory();
+    // std::unique_ptr<IModifier> newCatalyst = factory->CreateCatalyst("calcination");
     
-    std::cout << "Catalyst name  : " << newCatalyst->GetName() << std::endl;
+    // std::cout << "Catalyst name  : " << newCatalyst->GetName() << std::endl;
+
+    Deck deck;
+
+    deck.Setup();
+    deck.Seek();
 
     return 0;
 }

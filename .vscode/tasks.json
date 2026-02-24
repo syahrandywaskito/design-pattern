@@ -10,8 +10,9 @@
 				"-g",
 				"${fileDirname}/*.cpp",
 				"${fileDirname}/modifiers/*.cpp",
-				"${fileDirname}/consumables/*.cpp",
-				"${fileDirname}/upgrade/*.cpp",
+				// "${fileDirname}/consumables/*.cpp",
+				// "${fileDirname}/upgrade/*.cpp",
+				"${fileDirname}/decks/*.cpp",
 				"-o",
 				"${workspaceFolder}/output.exe"
 			],
