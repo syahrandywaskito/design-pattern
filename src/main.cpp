@@ -9,15 +9,11 @@
 
 int main(int argc, char const *argv[])
 {
-    // ModifierFactory* factory = new ModifierFactory();
-    // std::unique_ptr<IModifier> newCatalyst = factory->CreateCatalyst("calcination");
-    
-    // std::cout << "Catalyst name  : " << newCatalyst->GetName() << std::endl;
+    RunSession *session = new RunSession(); 
 
-    Deck deck;
+    session->Update();
 
-    deck.Setup();
-    deck.Seek();
+    session->End();
 
     return 0;
 }
